@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/IconAmazingEvents.png"
+      type="image/x-icon"
+    />
+    <title>Upcoming Events</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="d-flex justify-content-between p-3 mb-2 bg-primary text-white"
+      >
+        <div>
+          <a href="#">
+            <img
+              src="../img/LogoAmazingEvents.png"
+              alt="Bootstrap"
+              width="120"
+              height="30"
+            />
+          </a>
+        </div>
+        <div>
+          <a class="text-light bg-dark" href="../../index.html">Home</a>
+          <a class="text-light bg-dark" href="#">Upcoming Events</a>
+          <a class="text-light bg-dark" href="./PastEvents.html">Past Events</a>
+          <a class="text-light bg-dark" href="./Contact.html">Contact</a>
+          <a class="text-light bg-dark" href="../html/Stats.html">Stats</a>
+        </div>
+      </nav>
+    </header>
+    <main class="p-3 mb-2 bg-black text-white">
+      <h1 class="fs-1">Upcoming Events</h1>
+      <div class="d-flex flex-row align-items-center justify-content-center">
+        <form action="./html/show_data.html" method="get" id="check-box">
+          <input type="text" id="searchInput" placeholder="Search..." />
+        </form>
+      </div>
+      <div class="fs-1" id="noSearch"></div>
+      <div class="d-flex justify-content-evenly flex-wrap" id="cards-box"></div>
+    </main>
+    <footer
+      class="d-flex justify-content-between p-3 mb-2 bg-primary text-white"
+    >
+      <div>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="../img/instagram.png" alt=""
+        /></a>
+        <a href="https://es-la.facebook.com/" target="_blank"
+          ><img src="../img/facebook.png" alt=""
+        /></a>
+        <a href="https://web.whatsapp.com/" target="_blank"
+          ><img src="../img/whatsapp.png" alt=""
+        /></a>
+      </div>
+      <p>Cohort 48</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../js/UpcomingEvents.js"></script>
+  </body>
+</html>
